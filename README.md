@@ -1,4 +1,5 @@
 Author: Karthik Puthraya
+
 Email: karthik@puthraya.com
 
 This is a simple Su-Do-Ku solver written in Python. The program uses a simple approach to reduce the current puzzle as much as possible without guessing. Upon hitting a dead-end, the program makes an informed guess. If the guess turns out to be inconsistent, the program backtracks and makes a different guess. 
