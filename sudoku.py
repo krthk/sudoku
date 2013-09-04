@@ -166,12 +166,12 @@ def main(filename, VERBOSE):
     return
 
 if __name__ == '__main__':
-    if len(sys.argv) > 3 or (len(sys.argv) == 3 and sys.argv[1] != '-v'): 
+    if len(sys.argv) > 3 or (len(sys.argv) == 3 and sys.argv[1] != '-v') or len(sys.argv) == 1: 
         print "Usage: sudoku [-v] [FILE]"
         print "\nEach line in the FILE is interpreted to be an input puzzle."
         print "Each of the 9 rows are appended to each to form a 81-character input puzzle"
         print "Unknown entries in the puzzle are denoted by a period(.)"
-        print "\nExample: .2.3......63.....58.......15....9.3....7........1....8.879..26......6.7...6..7..4"
+        print "\nExample: 4.....8.5.3..........7......2.....6.....8.4......1.......6.3.7.5..2.....1.4......"
         print "\nUse the -v flag to print the debug statements."
         sys.exit()
     
